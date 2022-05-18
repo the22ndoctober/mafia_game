@@ -1,0 +1,19 @@
+[
+    {"id":1, "name": "Floppy", "points": 55.5},
+    {"id":2, "name": "Рауль", "points": 52.5},
+    {"id":3, "name": "Braun", "points": 62.5},
+    {"id":4, "name": "Seezov", "points": 45.5},
+    {"id":5, "name": "Железный", "points": 34.5},
+    {"id":6, "name": "Грин", "points": 75.5},
+    {"id":7, "name": "Хоттабыч", "points": 80.5},
+    {"id":8, "name": "Хуебес", "points": 30.2},
+    {"id":9, "name": "Луна", "points": 44.7},
+    {"id":10, "name": "Хуебес 2", "points": 55.5},
+    {"id":11, "name": "Кори", "points": 55.4},
+    {"id":12, "name": "Петух", "points": 55.8},
+    {"id":13, "name": "Ультра Петух", "points": 63.5},
+    {"id":14, "name": "Мафиозный Петух", "points": 53.5}
+
+]
+    
+

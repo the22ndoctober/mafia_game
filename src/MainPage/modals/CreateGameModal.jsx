@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
-import Button from '@mui/material/Button'
+import IconButton from '@mui/material/IconButton'
+import DropDown from './DropDown'
+import options from '../../Strore/jsons/players.json'
 
+ 
 const style = {
   position: 'absolute',
   top: '50%',
@@ -20,10 +23,14 @@ const close = {
   right: 0,
   top: '-50px',
   border: 'none',
-  outline: 'none'
+  outline: 'none',
+  color: '#fff'
 }
 
 export default function CreateGameModal({open, handleClose}) {
+  const [value, setValue] = useState(null)
+
+
   return (
     <div>
       
@@ -35,7 +42,18 @@ export default function CreateGameModal({open, handleClose}) {
         
         <Box sx={style}>
           
-          <Button variant="outlined" color="error" style={close} onClick={handleClose}>X</Button>
+          <IconButton variant="outlined" style={close} onClick={handleClose}>
+            X
+          </IconButton>
+          <div style={{width: 300}}>
+            <DropDown 
+              options={options} 
+              prompt={'Выберите игрока'}
+              value={value}
+              onChange={val => setValue(val)}
+            />
+          </div>
+
         </Box>
       </Modal>
     </div>
