@@ -9,11 +9,9 @@ export default function DropDown({
     }){
 
     const [open, setOpen] = useState(false)
+    
     const handleOpen = ()=>{
         setOpen(prev => !prev)
-    }
-    const handleChooseOption = option =>{
-        
     }
         
     return (
