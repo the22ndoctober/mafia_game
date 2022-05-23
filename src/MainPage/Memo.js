@@ -1,23 +1,23 @@
-import React, {useState, useMemo, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 
 export default function Memo (){
     const [value,setValue] = useState(0)
-    const [effect, setEffect] = useState(0)
+    
     
 
     useEffect(()=>{
-        setEffect(effect+1)
+        console.log('Маджест гей(гений)')
     }, [value])
 
-    function sosi(){
+    const sosi = () =>{
+       
         setValue(value+1)
     }
 
-
     return(
         <div>          
-            <div>{value}</div>
-            <div style={{color:'#fff'}}>{effect}</div>
+            <div style={{color:'#fff'}}>{value}</div>
+            
             <button onClick={sosi}>plus</button>        
         </div>
         
